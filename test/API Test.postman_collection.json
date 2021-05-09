@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "be3ac2cd-c763-412b-bbe2-da643ce756b2",
 		"name": "API Test",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -20,7 +20,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{API_BASE_URL}}/ta/sm-ma?ticker=air.nz&date_from=2021-02-01",
+							"raw": "{{API_BASE_URL}}/ta/sm-ma?ticker=air.nz&datetime_from=2021-02-01",
 							"host": [
 								"{{API_BASE_URL}}"
 							],
@@ -34,9 +34,111 @@
 									"value": "air.nz"
 								},
 								{
-									"key": "date_from",
+									"key": "datetime_from",
 									"value": "2021-02-01"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EPMA",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/ep-ma?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"ep-ma"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Financial",
+			"item": [
+				{
+					"name": "Cashflow",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/cashflow?ticker=air.nz&year=2020",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"cashflow"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2020"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Info",
+			"item": [
+				{
+					"name": "Ticker",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/ticker",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"ticker"
 							]
 						}
 					},
@@ -70,7 +172,16 @@
 						"value": "{{CLIENT_SECRET}}"
 					}
 				],
-				"url": "{{API_BASE_URL}}/oauth/login",
+				"url": {
+					"raw": "{{API_BASE_URL}}/oauth/login",
+					"host": [
+						"{{API_BASE_URL}}"
+					],
+					"path": [
+						"oauth",
+						"login"
+					]
+				},
 				"description": "Login and authenticate to the API and get a bearer token"
 			},
 			"response": []
