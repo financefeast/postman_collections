@@ -1,0 +1,707 @@
+{
+	"info": {
+		"_postman_id": "be3ac2cd-c763-412b-bbe2-da643ce756b2",
+		"name": "API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Technical Indicators",
+			"item": [
+				{
+					"name": "SMA",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/sm-ma?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"sm-ma"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EPMA",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/ep-ma?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"ep-ma"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MACD",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/sm-ma?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"sm-ma"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RSI",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/rsi?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"rsi"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Financial",
+			"item": [
+				{
+					"name": "Cashflow",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/cashflow?ticker=air.nz&year=2020",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"cashflow"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2020"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Income",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/income?ticker=air.nz&year=2021",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"income"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Balance",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/income?ticker=air.nz&year=2021",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"income"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dividend",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/income?ticker=air.nz&year=2021",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"income"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Split",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/financial/split?ticker=air.nz&year=2021",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"financial",
+								"split"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "year",
+									"value": "2021"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Info",
+			"item": [
+				{
+					"name": "Ticker",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/ticker",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"ticker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exchange Status",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/exchange/status",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"exchange",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exchange",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/exchange",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"exchange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/index",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Social Platform",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/social-platform",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"social-platform"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Usage",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/info/index",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"info",
+								"index"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alternate",
+			"item": [
+				{
+					"name": "Social Sentiment",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/alternate/social-sentiment?ticker=air.nz&datetime_from=2021-04-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"alternate",
+								"social-sentiment"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-04-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Core Data",
+			"item": [
+				{
+					"name": "EOD",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"var TOKEN = pm.environment.get('TOKEN')",
+									"console.log(TOKEN);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": " Bearer {{TOKEN}}"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/data/eod?ticker=air.nz&date_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"data",
+								"eod"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "date_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Intraday",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/data/intraday?ticker=mel.nz&datetime_from=2021-03-20",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"data",
+								"intraday"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "mel.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-03-20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orderbook",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/data/orderbook?ticker=mel.nz",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"data",
+								"orderbook"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "mel.nz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/data/index?index=SPNZXALL&datetime_from=2021-03-20",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"data",
+								"index"
+							],
+							"query": [
+								{
+									"key": "index",
+									"value": "SPNZXALL"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-03-20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"TOKEN\", data.access_token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-FF-ID",
+						"value": "{{CLIENT_ID}}"
+					},
+					{
+						"key": "X-FF-SECRET",
+						"value": "{{CLIENT_SECRET}}"
+					}
+				],
+				"url": {
+					"raw": "{{API_BASE_URL}}/oauth/login",
+					"host": [
+						"{{API_BASE_URL}}"
+					],
+					"path": [
+						"oauth",
+						"login"
+					]
+				},
+				"description": "Login and authenticate to the API and get a bearer token"
+			},
+			"response": []
+		}
+	]
+}
