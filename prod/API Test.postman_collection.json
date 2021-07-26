@@ -143,6 +143,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Stochastic",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{API_BASE_URL}}/ta/stochastic?ticker=air.nz&datetime_from=2021-02-01",
+							"host": [
+								"{{API_BASE_URL}}"
+							],
+							"path": [
+								"ta",
+								"stochastic"
+							],
+							"query": [
+								{
+									"key": "ticker",
+									"value": "air.nz"
+								},
+								{
+									"key": "datetime_from",
+									"value": "2021-02-01"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -263,22 +297,22 @@
 							}
 						],
 						"url": {
-							"raw": "{{API_BASE_URL}}/financial/income?ticker=air.nz&year=2021",
+							"raw": "{{API_BASE_URL}}/financial/dividend?ticker=mel.nz&year=2020",
 							"host": [
 								"{{API_BASE_URL}}"
 							],
 							"path": [
 								"financial",
-								"income"
+								"dividend"
 							],
 							"query": [
 								{
 									"key": "ticker",
-									"value": "air.nz"
+									"value": "mel.nz"
 								},
 								{
 									"key": "year",
-									"value": "2021"
+									"value": "2020"
 								}
 							]
 						}
@@ -462,13 +496,13 @@
 							}
 						],
 						"url": {
-							"raw": "{{API_BASE_URL}}/info/index",
+							"raw": "{{API_BASE_URL}}/account/usage",
 							"host": [
 								"{{API_BASE_URL}}"
 							],
 							"path": [
-								"info",
-								"index"
+								"account",
+								"usage"
 							]
 						}
 					},
@@ -491,7 +525,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{API_BASE_URL}}/alternate/social-sentiment?ticker=air.nz&datetime_from=2021-04-01",
+							"raw": "{{API_BASE_URL}}/alternate/social-sentiment?ticker=air.nz&date_from=2020-04-01",
 							"host": [
 								"{{API_BASE_URL}}"
 							],
@@ -505,8 +539,8 @@
 									"value": "air.nz"
 								},
 								{
-									"key": "datetime_from",
-									"value": "2021-04-01"
+									"key": "date_from",
+									"value": "2020-04-01"
 								}
 							]
 						}
